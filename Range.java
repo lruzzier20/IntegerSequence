@@ -10,7 +10,7 @@ public class Range implements IntegerSequence{
     if(s<=e){
       start=s;
       end=e;
-      current=0;
+      current=start;
     }else{throw new IllegalArgumentException("Invalid values for Range");}
   }
 
@@ -19,7 +19,7 @@ public class Range implements IntegerSequence{
   }
 
   public int length(){
-
+    return end-start+1;
   }
 
   //When current is no longer a valid element in the range, it should return false.
