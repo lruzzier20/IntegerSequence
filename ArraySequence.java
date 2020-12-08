@@ -20,4 +20,8 @@ public class ArraySequence implements IntegerSequence{
     currentIndex++;
     return data[temp];
   }
+
+  public int length(){
+    return data.length;
+  }
 }
