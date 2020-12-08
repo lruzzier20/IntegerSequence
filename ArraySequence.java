@@ -5,5 +5,6 @@ public class ArraySequence implements IntegerSequence{
 
   /*Construct the sequence by copying values from the other array into the data array*/
   public ArraySequence(int[] other){
+    data=other;
   }
 }
