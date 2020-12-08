@@ -24,4 +24,8 @@ public class ArraySequence implements IntegerSequence{
   public int length(){
     return data.length;
   }
+
+  public void reset(){
+    currentIndex=0;
+  }
 }
