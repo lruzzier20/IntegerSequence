@@ -1,6 +1,6 @@
 import java.util.NoSuchElementException;
 public class Range implements IntegerSequence{
-  private int start,end,current;
+  private int start,end,current,temp;
 
   /*
 *@precondition: start <= end
@@ -33,8 +33,9 @@ public class Range implements IntegerSequence{
   //e.g.  if current is 5. This will make current 6, and return 5.
   public int next(){
     if(!this.hasNext()){throw new NoSuchElementException("You have reached the end of the range");}
-    return current;
+    temp=current;
     current++;
+    return temp;
   }
 
 }
